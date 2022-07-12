@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .a {
+      margin: 20px;
+      background-color: red;
+    }
+
+    .a p {
+      width: 600px;
+      margin: auto;
+      background-color: red;
+    }
+
+    .b {
+      border: 2px black solid;
+      margin: auto;
+      width: auto;
+      max-width: 600px;
+      padding: 10px;
+    }
+
+    .bb {
+      padding: 0 10px;
+    }
+
+    .b p:nth-child(1) {
+      height: 60px;
+      overflow: auto;
+    }
+
+    .b p:nth-child(2) {
+      margin: 20px 0;
+      height: 45px;
+      background-color: #ee82ee;
+    }
+
+    .b p:nth-child(2):hover {
+      margin: 20px -10px;
+    }
+
+    .b p:nth-child(3) {
+      height: 60px;
+      overflow: auto;
+    }
+
+    .s {
+      width: 0;
+      margin: 60px auto;
+      border: #ffffff 50px solid;
+      border-bottom: 50px #ffa500 solid;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="a">
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt at, ea natus cupiditate assumenda deserunt ex
+      maxime dignissimos. Soluta laudantium id architecto fugit labore fuga consequatur placeat laboriosam dolorum!
+      Incidunt!</p>
+  </div>
+  <div class="bb">
+    <div class="b">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae sapiente voluptas officiis, praesentium, nemo
+        iure cumque nihil, facere hic asperiores dicta commodi magni, voluptates eaque esse atque nesciunt! Cupiditate,
+        modi.</p>
+      <p></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi accusantium deleniti consequuntur, enim
+        nulla
+        voluptatum qui ducimus esse rem eius eligendi consequatur sint. Sunt ut, est iusto neque numquam. Lorem ipsum
+        dolor sit amet, consectetur adipisicing elit. Laboriosam animi perspiciatis eos, molestias provident, quae
+        ullam!
+        Obcaecati suscipit optio labore iusto veniam facere, amet officiis, eveniet voluptatibus molestiae, dignissimos
+        dolor!</p>
+    </div>
+  </div>
+  <div class="s"></div>
+</body>
+
+</html>

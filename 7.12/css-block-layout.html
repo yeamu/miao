@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* zoom: 1.5; */
+    }
+
+    body {
+      /* font-size: 20px; */
+      min-width: 500px;
+    }
+
+    .to {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    /* 第一部分 */
+    .head {
+      height: 85px;
+      background-color: black;
+
+    }
+
+    .head p {
+
+      width: 600px;
+      color: white;
+      margin: auto;
+    }
+
+
+
+    /* 第二部分 */
+    .b {
+      width: 600px;
+      margin: 20px auto;
+    }
+
+
+
+    /* 第三部分 */
+    .box {
+      width: 600px;
+      margin: auto;
+    }
+
+    .box div {
+      width: 180px;
+      height: 40px;
+      border: 3px black solid;
+      box-sizing: border-box;
+      background-color: #ffc0cb;
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    .box div:hover {
+      background-color: #ff0000;
+    }
+
+    .box div:nth-child(n+5) {
+      margin-left: 210px;
+    }
+
+    .box div:nth-child(n+9) {
+      margin-left: 420px;
+    }
+
+    .box div:nth-child(5) {
+      margin-top: -220px;
+    }
+
+    .box div:nth-child(9) {
+      margin-top: -220px;
+    }
+
+
+
+
+    /* 第四部分 */
+
+    .c ul {
+      list-style: none;
+      margin: auto;
+      width: 600px;
+      overflow: hidden;
+    }
+
+    .c ul li {
+      border-bottom: 1px black dashed;
+      margin-bottom: -1px;
+
+    }
+
+
+
+
+    /* 第五部分 */
+    .foot {
+      margin-top: 20px;
+      background-color: #ee8aee;
+    }
+
+    .foot div {
+      width: 600px;
+      margin: auto;
+    }
+
+    .foot div p {
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="head">
+    <p>hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果hello
+      world 请调整浏览器窗口大小查看效果hello world 请调整浏览器窗口大小查看效果</p>
+  </div>
+  <div class="b">
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+    页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px
+  </div>
+  <div class="box">
+    <div>宽180高40(包含边框)
+    </div>
+    <div>水平间隙30px</div>
+    <div>垂直间隙15px</div>
+    <div>边框宽度3px</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+    <div>产品</div>
+  </div>
+  <div class="c">
+    <ul>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+      <li>link</li>
+    </ul>
+  </div>
+  <div class="foot">
+    <div to>
+      <p>&copy;版权所有
+        <br>
+        本页所有布局均使用块元素
+      </p>
+
+    </div>
+  </div>
+</body>
+
+</html>
