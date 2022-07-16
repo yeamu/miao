@@ -8,262 +8,196 @@
   <title>Document</title>
   <style>
     * {
-      background-color: rgba(0, 0, 0, 0.08);
+      /* background-color: rgba(0, 0, 0, 0.08); */
       box-shadow: inset 0 0 1px red;
-      font-size: initial;
-    }
-
-    html,
-    body,
-    section {
-      height: 100%;
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    body {
-      min-width: 860px;
+    .a,
+    .c,
+    .d {
+      width: 200px;
+      /* height: 100%; */
+      /* border: 1px solid black; */
     }
 
-    section {
-      font-size: 0;
-    }
-
-    section>* {
-      display: inline-block;
-      vertical-align: top;
-    }
-
-    section>div {
-      width: calc(100% - 450px);
-      height: 100%;
-      min-width: 400px;
+    h3 {
+      height: 80px;
 
     }
 
-    section>aside {
-      width: 150px;
-      height: 100%;
+    .a {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      background-color: rgb(255, 255, 255);
+
     }
 
-    section>aside h3 {
-      text-align: center;
+    .a .header {
+      width: 100%;
+      height: 80px;
     }
 
-    section>div>header {
-      height: 100px;
+    .a .header h3 {
+      /* width: 200px; */
     }
 
-    section>div>main {
-      height: calc(100% - 100px);
+    .a ul {
+      position: absolute;
+      top: 80px;
+      bottom: 0;
+      width: 100%;
       overflow: auto;
+    }
 
+    .a ul li {
+      margin-left: 20px;
+    }
+
+    .b {
+      position: absolute;
+      top: 0;
+      left: 200px;
+      right: 400px;
+      bottom: 0;
+
+      background-color: rgb(223, 133, 23);
+    }
+
+    .b .foot {
+      position: absolute;
+      top: 80px;
+      bottom: 0;
+      overflow: auto;
+    }
+
+    .b .foot {
+      position: absolute;
+
+    }
+
+    .c {
+      position: absolute;
+      top: 0;
+      right: 200px;
+      bottom: 0;
+      background-color: rgb(160, 10, 117);
+    }
+
+
+    .d {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgb(15, 141, 199);
     }
 
   </style>
 </head>
 
 <body>
-  <section>
-    <aside>
-      <h3>hello world</h3>
-    </aside>
-    <div>
-      <header>hello world</header>
-      <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!Loremlorenm
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!LoremlorenmLorem ipsum dolor sit amet consectetur adipisicing elit. Similique optio quidem rem iure
-        inventore non quam
-        porro, tenetur reprehenderit consequuntur debitis est architecto atque, error nisi eaque aliquid. Consequatur,
-        doloremque?lor\
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum laborum officiis perferendis consectetur.
-        Tempora id provident accusantium laborum tempore voluptatum, officia quo et excepturi, modi rem quia sapiente
-        culpa esse?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis ab itaque molestias at qui nobis
-        sunt a consequatur, voluptatum nostrum, omnis voluptate harum ex? Dolorum deleniti consectetur ipsa quia
-        non!Loremlorenm
 
-      </main>
+  <div class="a">
+    <div class="header">
+      <h3>hellow world</h3>
     </div>
-    <aside>
-      <h3>hello world</h3>
-    </aside>
-    <aside>
-      <h3>hello world</h3>
-    </aside>
-  </section>
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+  </div>
+  <div class="b">
+    <h3>hellow world</h3>
+    <div class="foot">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore et odio sunt sint ut blanditiis amet
+      soluta praesentium harum, obcaecati, sed beatae quo, officia libero consequuntur modi doloribus ab.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium necessitatibus officiis nihil quia mollitia
+      quasi eius, itaque illum, ipsum facere possimus fugiat obcaecati veniam iusto ut, neque sint exercitationem.
+      Nobis?
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus tenetur vitae quas eius nobis, dignissimos,
+      officia architecto necessitatibus molestiae expedita aspernatur nam? Modi illo culpa tenetur, nostrum fugiat
+      nobis
+      perferendis?
+    </div>
+  </div>
+  <div class="c"></div>
+
+
+  <div class="d">
+  </div>
+
+
+  </div>
 </body>
 
 </html>

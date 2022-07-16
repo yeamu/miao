@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1e1e1e;
+      color: #b1b1b1;
+    }
+
+    li {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    li:hover {
+      background-color: #04395e;
+    }
+
+    .header {
+      background-color: #3c3c3c;
+    }
+
+    .header img {
+      height: 30px;
+      vertical-align: middle;
+      margin: 0 20px;
+    }
+
+    .header span {
+      position: relative;
+      display: inline-block;
+      margin-right: 20px;
+      line-height: 40px;
+    }
+
+    .header span:hover {
+      background-color: #454646;
+      border-radius: 5px;
+    }
+
+    .header span:hover>ul {
+      display: block;
+    }
+
+    .header .p1 {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      text-align: justify;
+      display: none;
+      width: 400px;
+      /* height: 1650px; */
+      background-color: #303031;
+      border-radius: 9px;
+      padding: 10px 0;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+
+    }
+
+    .header .p1>li {
+      position: relative;
+
+    }
+
+    .header .p1>li:hover {
+      background-color: #04395e;
+    }
+
+    .header .p1>li:hover .p2-1 {
+      display: block;
+    }
+
+    .p2-1 {
+      display: none;
+      position: absolute;
+      top: -20%;
+      left: 98%;
+      width: 400px;
+      /* height: 460px; */
+      background-color: #303031;
+      border-radius: 9px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+      padding: 10px 0;
+      white-space: nowrap;
+
+    }
+
+    .p2-1>li {
+      position: relative;
+    }
+
+    .p2-2>li {
+      position: relative;
+    }
+
+    .p3-1 {
+      display: none;
+      position: absolute;
+      top: -20%;
+      left: 98%;
+      width: 230px;
+      /* height: 120px; */
+      background-color: #303031;
+      border-radius: 9px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+      padding: 10px 0;
+
+    }
+
+    .p2-1>li:hover .p3-1 {
+      display: block;
+    }
+
+
+    .p2-2 {
+      display: none;
+      position: absolute;
+      top: -20%;
+      left: 98%;
+      width: 400px;
+      /* height: 460px; */
+      background-color: #303031;
+      border-radius: 9px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+      padding: 10px 0;
+
+    }
+
+    .header .p1>li:hover .p2-2 {
+      display: block;
+    }
+
+    .p3-2 {
+      display: none;
+      position: absolute;
+      top: -20%;
+      left: 98%;
+      width: 230px;
+      height: 120px;
+      background-color: #303031;
+      border-radius: 9px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+      padding: 10px 0;
+
+    }
+
+    .p2-2>li:hover .p3-2 {
+      display: block;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <a href="https://code.visualstudio.com/" target="_blank"><img
+        src="https://oscimg.oschina.net/oscnet/e5638db8d01b01cb6339db50ed5c0ef4032.jpg" alt=""></a>
+    <span>文件(F)
+
+    </span>
+    <span>编辑(E)</span>
+    <span>选择(S)</span>
+    <span>查看(V)
+      <ul class='p1'>
+        <li>命令面板</li>
+        <li>打开视图</li>
+        <li>外观
+          <ul class="p2-1">
+            <li>全屏</li>
+            <li>禅模式</li>
+            <li>面板位置
+              <ul class="p3-1">
+                <li>底部</li>
+                <li>左</li>
+                <li>右</li>
+              </ul>
+            </li>
+            <li>
+
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </li>
+        <li>编辑器布局
+          <ul class="p2-2">
+            <li>向上拆分</li>
+            <li>向下拆分</li>
+            <li>向左拆分</li>
+            <li>向右拆分</li>
+            <li>在组中拆分
+              <ul class="p3-2">
+                <li>Hi Sam</li>
+                <li>Hi Sam</li>
+                <li>Hi Sam</li>
+              </ul>
+            </li>
+            <li>单列</li>
+            <li>双列</li>
+            <li>三列</li>
+            <li>双行</li>
+          </ul>
+        </li>
+        <li>资源管理器
+
+        </li>
+        <li>搜索</li>
+        <li>源代码管理</li>
+        <li>运行</li>
+        <li>扩展</li>
+
+      </ul>
+    </span>
+    <span>转到(G)</span>
+    <span>运行(R)</span>
+    <span>终端(T)</span>
+    <span>帮助(H)</span>
+  </div>
+</body>
+
+</html>
