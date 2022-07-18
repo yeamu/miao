@@ -19,8 +19,9 @@
     }
 
     li {
+      position: relative;
       list-style: none;
-      padding-left: 20px;
+      padding: 0 20px;
     }
 
     li:hover {
@@ -29,7 +30,7 @@
 
     .header {
       background-color: #3c3c3c;
-      /* white-space: nowrap; */
+      white-space: nowrap;
     }
 
     .header img {
@@ -50,114 +51,38 @@
       border-radius: 5px;
     }
 
-    .header span:hover>ul {
-      display: block;
-    }
-
-    .header .p1 {
+    .header span>ul {
       position: absolute;
       top: 100%;
       left: 0;
       text-align: justify;
       display: none;
-      width: 400px;
-      /* height: 1650px; */
-      background-color: #303031;
-      border-radius: 9px;
-      padding: 10px 0;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
-
-    }
-
-    .header .p1>li {
-      position: relative;
-
-    }
-
-    .header .p1>li:hover {
-      background-color: #04395e;
-    }
-
-    .header .p1>li:hover .p2-1 {
-      display: block;
-    }
-
-    .p2-1 {
-      display: none;
-      position: absolute;
-      top: -20%;
-      left: 98%;
-      width: 400px;
-      /* height: 460px; */
       background-color: #303031;
       border-radius: 9px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
-      padding: 10px 0;
       white-space: nowrap;
-
+      padding: 10px 0;
     }
 
-    .p2-1>li {
-      position: relative;
+    .header span:hover>ul {
+      display: block;
     }
 
-    .p2-2>li {
-      position: relative;
+    .header span li:hover>ul {
+      display: block;
     }
 
-    .p3-1 {
+    .header span ul ul {
       display: none;
       position: absolute;
       top: -20%;
       left: 98%;
-      width: 230px;
-      /* height: 120px; */
       background-color: #303031;
       border-radius: 9px;
       box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
+      white-space: nowrap;
       padding: 10px 0;
 
-    }
-
-    .p2-1>li:hover .p3-1 {
-      display: block;
-    }
-
-
-    .p2-2 {
-      display: none;
-      position: absolute;
-      top: -20%;
-      left: 98%;
-      width: 400px;
-      /* height: 460px; */
-      background-color: #303031;
-      border-radius: 9px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
-      padding: 10px 0;
-
-    }
-
-    .header .p1>li:hover .p2-2 {
-      display: block;
-    }
-
-    .p3-2 {
-      display: none;
-      position: absolute;
-      top: -20%;
-      left: 98%;
-      width: 230px;
-      height: 120px;
-      background-color: #303031;
-      border-radius: 9px;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.582);
-      padding: 10px 0;
-
-    }
-
-    .p2-2>li:hover .p3-2 {
-      display: block;
     }
 
   </style>
@@ -175,15 +100,15 @@
     <span>编辑(E)</span>
     <span>选择(S)</span>
     <span>查看(V)
-      <ul class='p1'>
+      <ul>
         <li>命令面板</li>
         <li>打开视图</li>
         <li>外观
-          <ul class="p2-1">
+          <ul>
             <li>全屏</li>
             <li>禅模式</li>
             <li>面板位置
-              <ul class="p3-1">
+              <ul>
                 <li>底部</li>
                 <li>左</li>
                 <li>右</li>
@@ -201,13 +126,13 @@
           </ul>
         </li>
         <li>编辑器布局
-          <ul class="p2-2">
+          <ul>
             <li>向上拆分</li>
             <li>向下拆分</li>
             <li>向左拆分</li>
             <li>向右拆分</li>
             <li>在组中拆分
-              <ul class="p3-2">
+              <ul>
                 <li>Hi Sam</li>
                 <li>Hi Sam</li>
                 <li>Hi Sam</li>
