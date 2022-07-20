@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/less">
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body  {
+      background-color:#edf2f7;
+    }
+    input + .twitter {
+      display:block;
+      width: 100px;
+      height: 100px;
+      margin: 200px auto;
+      box-shadow:
+          2.8px 2.8px 2.2px rgba(0, 0, 0, 0.021),
+          6.7px 6.7px 5.3px rgba(0, 0, 0, 0.03),
+          12.5px 12.5px 10px rgba(0, 0, 0, 0.036),
+          22.3px 22.3px 17.9px rgba(0, 0, 0, 0.043),
+          41.8px 41.8px 33.4px rgba(0, 0, 0, 0.051),
+          100px 100px 80px rgba(0, 0, 0, 0.07);
+      background-color: #fff;
+      border-radius: 5px;
+      background-image: url(https://imgs88.men/2022/07/20/8c2851861b2befbcb3ffb0dca4f181e0.png);
+      background-size: cover;
+      background-position: 0 0;
+
+
+    }
+    input {
+      display:none;
+      &:checked + .twitter {
+        background-position: -2800px 0;
+        transition: 1.5s steps(28);
+      }
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <input type="checkbox" id="tw" name="">
+  <label for="tw" class="twitter">
+  </label>
+  <script src="less.js"></script>
+</body>
+
+</html>

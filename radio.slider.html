@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      /* box-shadow: inset 0 0 1px red; */
+    }
+
+    section {
+      position: relative;
+      width: 513px;
+      margin: 50px auto;
+    }
+
+    input {
+      display: none;
+    }
+
+    .imgs {
+      width: 513px;
+      height: 640px;
+      position: relative;
+      background-image: url(https://yeamu.github.io/miao/img/F6.jpg);
+      background-position: -215px -16px;
+      box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.021),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.03),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.036),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.043),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.051),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+
+    .imgs img {
+      width: 100%;
+      position: absolute;
+      opacity: 0;
+      transition: 1s;
+
+    }
+
+    input:nth-child(1):checked~.imgs img:nth-child(1),
+    input:nth-child(2):checked~.imgs img:nth-child(2),
+    input:nth-child(3):checked~.imgs img:nth-child(3),
+    input:nth-child(4):checked~.imgs img:nth-child(4),
+    input:nth-child(5):checked~.imgs img:nth-child(5) {
+      opacity: 1;
+    }
+
+    input:nth-child(1):checked~.btn label:nth-child(1),
+    input:nth-child(2):checked~.btn label:nth-child(2),
+    input:nth-child(3):checked~.btn label:nth-child(3),
+    input:nth-child(4):checked~.btn label:nth-child(4),
+    input:nth-child(5):checked~.btn label:nth-child(5) {
+      background-color: rgb(184, 0, 0);
+    }
+
+    .btn {
+      position: absolute;
+      left: 50%;
+      bottom: 30px;
+      transform: translateX(-50%);
+
+    }
+
+    .btn label {
+      position: relative;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      margin: 0 5px;
+      border-radius: 50%;
+      border: white 1px solid;
+    }
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <input type="radio" name="radio1" id="r1-1">
+    <input type="radio" name="radio1" id="r1-2">
+    <input type="radio" name="radio1" id="r1-3">
+    <input type="radio" name="radio1" id="r1-4">
+    <input type="radio" name="radio1" id="r1-5">
+    <div class="imgs">
+      <img src="https://yeamu.github.io/miao/img/F1.jpg" alt="">
+      <img src="https://yeamu.github.io/miao/img/F2.jpg" alt="">
+      <img src="https://yeamu.github.io/miao/img/F3.jpg" alt="">
+      <img src="https://yeamu.github.io/miao/img/F4.jpg" alt="">
+      <img src="https://yeamu.github.io/miao/img/F5.jpg" alt="">
+    </div>
+    <div class="btn">
+      <label for="r1-1"></label>
+      <label for="r1-2"></label>
+      <label for="r1-3"></label>
+      <label for="r1-4"></label>
+      <label for="r1-5"></label>
+    </div>
+  </section>
+</body>
+
+</html>
