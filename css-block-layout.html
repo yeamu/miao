@@ -163,6 +163,26 @@
       text-align: center;
     }
 
+
+
+    .flex {
+      display: flex;
+      width: 600px;
+      gap: 15px 30px;
+      /* height: 500px; */
+      margin: 10px auto;
+      flex-wrap: wrap;
+      /* margin-top: -15px; */
+    }
+
+    .flex div {
+      width: 180px;
+      height: 40px;
+      background-color: #ffc0cb;
+      box-sizing: border-box;
+      border: 3px black solid;
+    }
+
   </style>
 </head>
 
@@ -205,6 +225,14 @@
     </main>
 
   </div>
+  <div class="flex">
+    <div>1</div>
+    <div>2</div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
   <div class="c">
     <ul>
       <li>link</li>
@@ -214,6 +242,7 @@
       <li>link</li>
     </ul>
   </div>
+
   <div class="foot">
     <div to>
       <p>&copy;版权所有
