@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      position: relative;
+      height: 210px;
+      width: 400px;
+      background-color: rgb(9, 242, 71);
+      border-bottom: 3px red solid;
+      overflow: hidden;
+      transition: 5s -4s;
+    }
+
+    div::after {
+      content: '订阅博客';
+      position: absolute;
+      bottom: 0;
+      /* font-size: 19px; */
+      transition: 5s linear, 5s;
+    }
+
+    div:hover::after {
+      font-size: 100px;
+
+    }
+
+    div:hover {
+      background-color: rgb(21, 159, 180);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>
+
+  </div>
+</body>
+
+</html>

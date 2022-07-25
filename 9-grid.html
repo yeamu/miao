@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/less">
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .clearfix::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+
+    table {
+      border-collapse: collapse;
+
+      td {
+        width: 50px;
+        height: 50px;
+        border:5px solid blue;
+        text-align:center;
+
+        &:hover {
+          border:5.01px solid red;
+        }
+      }
+
+    }
+    .flex {
+      display: flex;
+      width: 180px;
+      flex-wrap: wrap;
+    }
+    .flex div {
+      height: 50px;
+      width: 50px;
+      border: 5px solid blue;
+      text-align:center;
+      line-height: 50px;
+      margin-bottom: -5px;
+      margin-right: -5px;
+
+      &:hover {
+        z-index: 1;
+        border: 5px solid red;
+      }
+
+    }
+
+   
+
+    .float {
+      width: 180px;
+
+      div {
+        float: left;
+        height: 50px;
+        width: 50px;
+        text-align:center;
+        line-height: 50px;
+        /* box-sizing:border-box; */
+        border: 5px solid blue;
+        
+        margin-bottom: -5px;
+        margin-right: -5px;
+
+        &:hover {
+        z-index: 1000;
+        border: 5px solid red;
+      }
+
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h3>table
+  </h3>
+  <table>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+
+  </table>
+  <br>
+  <h3>flex</h3>
+  <div class="flex">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+  <br>
+  <h3>float</h3>
+  <div class="float clearfix">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+</html>
