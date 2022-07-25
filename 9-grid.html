@@ -79,6 +79,32 @@
 
       }
     }
+    .blog {
+      margin-top: 20px;
+      position: relative;
+      height: 90px;
+      width: 150px;
+      background-color: rgb(9, 242, 71);
+      border-bottom: 3px red solid;
+      overflow: hidden;
+      transition: 1s;
+    }
+
+    .blog::after {
+      content: '订阅博客';
+      position: absolute;
+      bottom: 0;
+      transition: 2s linear;
+    }
+
+    .blog:hover::after {
+      font-size: 35px;
+
+    }
+
+    .blog:hover {
+      background-color: rgb(21, 159, 180);
+    }
   </style>
 </head>
 
@@ -131,6 +157,7 @@
     <div>8</div>
     <div>9</div>
   </div>
+  <div class="blog"></div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/less"></script>
 

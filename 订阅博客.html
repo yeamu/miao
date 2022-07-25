@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div {
+    .blog {
       position: relative;
       height: 210px;
       width: 400px;
@@ -17,7 +17,7 @@
       transition: 5s -4s;
     }
 
-    div::after {
+    .blog::after {
       content: '订阅博客';
       position: absolute;
       bottom: 0;
@@ -25,12 +25,12 @@
       transition: 5s linear, 5s;
     }
 
-    div:hover::after {
+    .blog:hover::after {
       font-size: 100px;
 
     }
 
-    div:hover {
+    .blog:hover {
       background-color: rgb(21, 159, 180);
     }
 
@@ -38,7 +38,7 @@
 </head>
 
 <body>
-  <div>
+  <div class="blog">
 
   </div>
 </body>
